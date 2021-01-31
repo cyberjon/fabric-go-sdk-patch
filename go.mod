@@ -4,6 +4,8 @@
 
 module github.com/cyberjon/fabric-go-sdk-patch
 
+go 1.15
+
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
 	github.com/golang/protobuf v1.2.0
