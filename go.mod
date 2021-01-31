@@ -2,7 +2,7 @@
 //
 // SPDX-License-Identifier: Apache-2.0
 
-module github.com/hyperledger/fabric-sdk-go/third_party/github.com/hyperledger/fabric
+module github.com/cyberjon/fabric-go-sdk-patch
 
 require (
 	github.com/Knetic/govaluate v3.0.0+incompatible
