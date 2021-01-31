@@ -48,11 +48,14 @@ type CCPackage interface {
 	GetId() []byte
 }
 
+// ChaincodeExtractor extracts chaincode from a given path
+type ChaincodeExtractor func(ccNameVersion string, path string) (CCPackage, error)
+
 //-------- ChaincodeData is stored on the LSCC -------
 
 // ChaincodeData defines the datastructure for chaincodes to be serialized by proto
 // Type provides an additional check by directing to use a specific package after instantiation
-// Data is Type specific (see CDSPackage and SignedCDSPackage)
+// Data is Type specifc (see CDSPackage and SignedCDSPackage)
 type ChaincodeData struct {
 	// Name of the chaincode
 	Name string `protobuf:"bytes,1,opt,name=name"`
